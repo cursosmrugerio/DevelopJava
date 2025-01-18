@@ -1,4 +1,4 @@
-package com.curso.v0;
+package com.curso.v1;
 
 public class string {
 	String String  = "Hello";
