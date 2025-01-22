@@ -1,16 +1,9 @@
 package com.curso.v0;
 
-enum Lenguajes{
-	GO,
-	PYTHON,
-	JAVA,
-	PHP
-}
-
-public class PrincipalSwithc {
+public class PrincipalSwitch {
 	
 	public static void main(String[] args) {
-		String cadena = "Go";
+		String cadena = "Java";
 		
 		switch(cadena) {
 			default:
@@ -18,7 +11,7 @@ public class PrincipalSwithc {
 			case "Go": case "Python":
 				System.out.println("A");
 				break;
-			case "Java":
+			case "Javax":
 				System.out.println("B");
 				break;
 			case "PHP":
