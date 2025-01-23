@@ -24,11 +24,6 @@ public class PrincipalClone1 {
 		System.out.println(dup[0].equals(copy)); //false
 		System.out.println(Arrays.equals(dup[0],copy)); //true
 		
-		
- 		
-		
-		
-		
 	}
 
 }
