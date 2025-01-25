@@ -2,22 +2,22 @@ package com.curso.v6;
 
 public class Resta implements Operacion {
 	
-	int x;
-	int y;
+	int pato1;
+	int pato2;
 	
-	Resta(int x, int y){
-		this.x = x;
-		this.y = y;
+	Resta(int duck1, int duck2){
+		pato1 = duck1;
+		pato2 = duck2;
 	}
 	
 	@Override
 	public int ejecuta() {
-		return x-y;
+		return pato1-pato2;
 	}
 
 	@Override
 	public String toString() {
-		return "Resta [x=" + x + ", y=" + y + "]";
+		return "Resta [x=" + pato1 + ", y=" + pato2 + "]";
 	}
 	
 }
