@@ -1,6 +1,7 @@
-package com.curso.v0;
+package com.curso.v2;
 
 class Ave {
+	String tipo = "AVE";
 	void volar(){
 		System.out.println("Ave Volar");
 	}
@@ -8,9 +9,17 @@ class Ave {
 		System.out.println("volarAve()");
 	}
 }
-
+class Pinguino extends Ave {
+	String tipo = "Pinguino";
+	void volar(){
+		System.out.println("Pinguino No Volar");
+	}
+	void volarPinguino() {
+		System.out.println("volarPinguino()");
+	}
+}
 class Pato extends Ave {
-	@Override
+	String tipo = "PATO";
 	void volar(){
 		System.out.println("Pato Volar");
 	}
@@ -19,6 +28,7 @@ class Pato extends Ave {
 	}
 }
 class PatoSilvestre extends Pato {
+	String tipo = "PATO SILVESTRE";
 	void volar(){
 		System.out.println("PatoSilvestre Volar");
 	}
@@ -29,23 +39,12 @@ class PatoSilvestre extends Pato {
 
 public class Principal{
 	public static void main(String[] args) {
-		Ave ave1 = new Ave();
-		ave1.volar();
-		ave1.volarAve();
 		
-		System.out.println("**PATO**");
-		Ave ave2 = new Pato();
-		ave2.volar();
-		ave2.volarAve();
-		((Pato)ave2).volarPato();
+		Pato pato = new Pato();
+		Ave ave = pato; //UPCASTING
+		Pinguino ping = (Pinguino)ave; //DOWNCASTING
+		ping.volar(); //ClassCastException
 		
-		System.out.println("**PATO SILVESTRE**");
-		Ave ave3 = new PatoSilvestre();
-		ave3.volar();
-		ave3.volarAve();
-		((Pato)ave3).volarPato();
-		((PatoSilvestre)ave3).volarPatoSilvestre();
-		
-		
+
 	}
 }
