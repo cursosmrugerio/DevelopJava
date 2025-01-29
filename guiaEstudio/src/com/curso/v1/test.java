@@ -4,6 +4,7 @@ public class test {
 	
 	test() {
 		try {
+			//Unchecked
 			throw new RuntimeException();
 		}finally {
 			System.out.println("Damn it"); //1<==
@@ -16,7 +17,7 @@ public class test {
 		}catch(Throwable t) {
 			System.out.println("Caught"); //2<==
 		}
-		System.out.println("Fin de Programa");
+		System.out.println("Fin de Programa"); //3<===
 	}
 
 }
