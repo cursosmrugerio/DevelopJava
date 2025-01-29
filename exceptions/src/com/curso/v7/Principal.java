@@ -19,7 +19,6 @@ public class Principal {
 		}
 
 		System.out.println("EndProgram");
-
 	}
 
 	private static int dividir(int x, int y) 
