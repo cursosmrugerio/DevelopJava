@@ -1,6 +1,6 @@
-package com.curso.v1;
+package com.set.v3;
 
-public class Empleado {
+public class Empleado{
 	
 	String nombre;
 	int edad;
@@ -16,9 +16,10 @@ public class Empleado {
 	public String toString() {
 		return "Empleado [nombre=" + nombre + ", edad=" + edad + ", sueldo=" + sueldo + "]";
 	}
-
-
 	
+	@Override
+	public boolean equals(Object o) {
+		return this.nombre.equals(((Empleado)o).nombre);
+	}
 	
-
 }

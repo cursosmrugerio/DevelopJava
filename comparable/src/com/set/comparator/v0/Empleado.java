@@ -1,6 +1,6 @@
-package com.curso.v1;
+package com.set.comparator.v0;
 
-public class Empleado {
+public class Empleado{
 	
 	String nombre;
 	int edad;
@@ -16,9 +16,5 @@ public class Empleado {
 	public String toString() {
 		return "Empleado [nombre=" + nombre + ", edad=" + edad + ", sueldo=" + sueldo + "]";
 	}
-
-
 	
-	
-
 }

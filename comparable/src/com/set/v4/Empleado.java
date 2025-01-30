@@ -1,6 +1,8 @@
-package com.curso.v1;
+package com.set.v4;
 
-public class Empleado {
+import java.util.Objects;
+
+public class Empleado{
 	
 	String nombre;
 	int edad;
@@ -17,8 +19,14 @@ public class Empleado {
 		return "Empleado [nombre=" + nombre + ", edad=" + edad + ", sueldo=" + sueldo + "]";
 	}
 
-
+	@Override
+	public int hashCode() {
+		return nombre.hashCode();
+	}
 	
+	@Override
+	public boolean equals(Object o) {
+		return this.nombre.equals(((Empleado)o).nombre);
+	}
 	
-
 }

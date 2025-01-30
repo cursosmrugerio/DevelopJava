@@ -1,6 +1,6 @@
-package com.curso.v1;
+package com.set.v1;
 
-public class Empleado {
+public class Empleado implements Comparable<Empleado>{
 	
 	String nombre;
 	int edad;
@@ -17,8 +17,9 @@ public class Empleado {
 		return "Empleado [nombre=" + nombre + ", edad=" + edad + ", sueldo=" + sueldo + "]";
 	}
 
-
+	@Override
+	public int compareTo(Empleado o) {
+		return this.nombre.compareTo(o.nombre);
+	}
 	
-	
-
 }
