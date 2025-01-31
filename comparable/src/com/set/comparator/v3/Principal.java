@@ -26,8 +26,7 @@ public class Principal {
 		setEmpleados.addAll(lista);
 		
 		System.out.println("**NOMBRE**");
-		for (Empleado emp :setEmpleados)
-			System.out.println(emp);
+		setEmpleados.forEach(System.out::println);
 		
 		setEmpleados = new TreeSet<>( 
 				(w,z)-> w.edad -z.edad );
@@ -35,17 +34,16 @@ public class Principal {
 		setEmpleados.addAll(lista);
 		
 		System.out.println("**EDAD**");
-		for (Empleado emp :setEmpleados)
-			System.out.println(emp);
-		
+		setEmpleados.forEach(System.out::println);
+
 		setEmpleados = new TreeSet<>(
 				(emp1,emp2) -> (int)(emp1.sueldo-emp2.sueldo));
 		
 		setEmpleados.addAll(lista);
 		
 		System.out.println("**SUELDO**");
-		for (Empleado emp :setEmpleados)
-			System.out.println(emp);
+		setEmpleados.forEach(System.out::println);
+
 	}
 
 }
